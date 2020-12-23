@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"> 
+<title>Interaction Home</title>
+	<link rel="stylesheet" type="text/css" href="css/main_home.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main_home.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+        <button id="back" onclick="location.href='../portfolio_home.html'">포트폴리오로 돌아가기</button>
+		<!--header-->
+		<header id="header">
+			<div class="container">
+				<div class="h_left">
+				<h1 class="hidden">header logo</h1>
+					<p class="h_logo">
+						<span><a href="login_console.html">LOGO</a></span>
+						<span><a href="interaction_home_new.html">Interaction</a></span>
+					</p>
+				</div> <!--h_left end-->
+				
+				<div class="h_right">
+				<h3 class="hidden">header information</h3>
+					<!--<img src="img/interaction/menu.png"/>-->
+					<!--class="site_map"-->
+				</div> <!--h_right end-->
+			</div> <!--container end-->
+		</header> <!--header end-->
+		
+		<!--nav-->
+		<nav id="navbar">
+			<h2 class="hidden">메뉴</h2>
+			<ul>
+				<li class="home"><a href="interaction_home_new.html" title="HOME"><img src="img/interaction/menu_home_btn.png" alt="HOME"/></a></li>
+				<li class="call"><a href="interaction_call_new.html" title="CALL"><img src="img/interaction/menu_call_btn.png" alt="CALL"/></a></li>
+				<li class="mail"><a href="interaction_mail_new.html" title="MAIL"><img src="img/interaction/menu_mail_btn.png" alt="MAIL"/></a></li>
+				<li class="chat"><a href="interaction_chat_new.html" title="CHAT"><img src="img/interaction/menu_chat_btn.png" alt="CHAT"/></a></li>
+				<li class="history"><a href="interaction_history_new.html" title="HISTORY"><img src="img/interaction/menu_history_btn.png" alt="HISTORY"/></a></li>
+			</ul>
+		</nav> <!--navbar end-->
+		
+		<!--main-->
+		<div id="contents">
+			<section id="logon">
+				<div class="logon_info">
+				<h3 class="hidden">로그온상태</h3>
+					<div class="logon_state1">
+						<p class="log_no">[<span>15222</span>]</p>
+						<p class="log_time"></p>
+						<p class="log_name">YoonJung Huh</p>
+					</div> <!--logon_state1 end-->
+					<div class="logon_state2">
+						<div class="log_light"></div>
+						<select id="state_form" name="state_form">
+							<option value="logon">LOG ON</option>
+							<option value="logout">LOG OUT</option>
+							<option value="ready">READY</option>
+							<option value="not_ready">NOT READY</option>
+							<option value="after">AFTER CALL WORK</option>
+						</select>
+					</div> <!--logon_state2 end-->
+				</div> <!--logon_info end-->
+			</section>
+			<section id="main">		
+				<div class="main_ctn">
+				<h3 class="hidden">home 내용</h3>
+					<div class="container">
+						<div class="main_mc mc_agent">
+							<p>
+								<span>AGENT PERFORMANCE</span>
+								<img src="img/interaction/refresh_btn.png" alt="새로고침"/>
+							</p>
+							
+							<!--지울부분-->
+							<div class="analy">
+								<ul>
+									<li><a href="#">+ LOGIN TIME</a></li>
+									<li><a href="#">+ LONGEST TALK TIME (CALL)</a></li>
+									<li><a href="#">+ AVG.RINGING TIME (CALL)</a></li>
+									<li><a href="#">+ AVG.RINGING TIME (CALL)</a></li>
+								</ul>
+							</div>
+							
+							<div class="agent_boxes">
+								<ul class="agent_box a_b1">
+									<li class="a_b_title">
+										<span class="a_b_setting"><a href="#"><img src="img/interaction/setting_btn.png"/></a></span>
+										<span>INCOMING CALL</span>
+										<span class="a_b_close"><img src="img/interaction/close_btn.png"/></span>
+									</li>
+									<li class="a_b_num"><span><img src="img/interaction/incomingcall_20_icon.png"/></span>10</li>
+									<li class="a_b_avg">Average <span>8</span></li>
+									<li class="a_b_top">Top <span>555</span></li>
+								</ul>
+								<ul class="agent_box a_b2">
+									<li class="a_b_title">
+										<span class="a_b_setting"><a href="#"><img src="img/interaction/setting_btn.png"/></a></span>
+										<span>OUTGOING CALL</span>
+										<span class="a_b_close"><img src="img/interaction/close_btn.png"/></span>
+									</li>
+									<li class="a_b_num"><span><img src="img/interaction/outgoingcall_20_icon.png"/></span>10</li>
+									<li class="a_b_avg">Average <span>8</span></li>
+									<li class="a_b_top">Top <span>555</span></li>
+								</ul>
+								<ul class="agent_box a_b3">
+									<li class="a_b_title">
+										<span class="a_b_setting"><a href="#"><img src="img/interaction/setting_btn.png"/></a></span>
+										<span>MAIL</span>
+										<span class="a_b_close"><img src="img/interaction/close_btn.png"/></span>
+									</li>
+									<li class="a_b_num"><span><img src="img/interaction/mail_20_icon.png"/></span>3/8</li>
+									<li class="a_b_avg">Average <span>8</span></li>
+									<li class="a_b_top">Top <span>555</span></li>
+								</ul>
+								<ul class="agent_box a_b4">
+									<li class="a_b_title">
+										<span class="a_b_setting"><a href="#"><img src="img/interaction/setting_btn.png"/></a></span>
+										<span>CHAT</span>
+										<span class="a_b_close"><img src="img/interaction/close_btn.png"/></span>
+									</li>
+									<li class="a_b_num"><span><img src="img/interaction/chat_20_icon.png"/></span>10</li>
+									<li class="a_b_avg">Average <span>8</span></li>
+									<li class="a_b_top">Top <span>555</span></li>
+								</ul>
+							</div> <!--agent_boxes end-->
+						</div> <!--mc_agent end-->
+						<div class="main_mc mc_skill">
+							<p>
+								<span>SKILL (QUEUE/ACD) INFORMATION</span>
+								<a href="#"><img src="img/interaction/refresh_btn.png" alt="새로고침"/></a>
+							</p>
+							<div id="grid"></div>
+						</div> <!--mc_skill end-->
+					</div> <!--container end-->
+				</div> <!--main_ctn end-->
+			</section> <!--main end-->
+			<div class="site_map_pop">
+				<ul>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/interaction_btn.png"/>
+							<span>INTERACTION</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/report_btn.png"/>
+							<span>REPORT</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/monitoring_btn.png"/>
+							<span>MONITORING</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/management_btn.png"/>
+							<span>MANAGEMENT</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/kms_btn.png"/>
+							<span>KMS</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/setting_btn.png"/>
+							<span>SETTING</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/wallboard_btn.png"/>
+							<span>WALLBOARD</span>
+						</a>
+					</li>
+				</ul>
+			</div> <!--site_map_pop end-->
+		</div> <!--contents end-->
+		
+		<!--footer copyright-->
+		<footer id="footer">
+		</footer> <!--footer end-->
+	</div> <!--wrapper end-->
+</body>
+</html>

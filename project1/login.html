@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"> 
+<title>login</title>
+<style>
+	*{margin:0; padding:0;}
+	li{list-style-type:none;}
+	img{border:0 none;}
+	body{font-family:"Malgun Gothic", sans-serif; color:#000; font-size:100%; background-color:#e3e7ea;}
+	a:link, a:visited{color:#000; text-decoration:none;}
+	a:hover, a:focus{color:#f00; text-decoration:underline;}
+    
+	.hidden{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0;}
+	.container{width:350px; margin:0 auto;}
+	
+    #back{width:180px; height:30px; position:absolute; top:10px; right:10px; font-size:14px; cursor:pointer; border:none;}
+    #back:hover{font-weight:bold;}
+    /*-webkit-animation:blink 2.0s linear infinite;*/
+    /*@keyframes blink{0%{background-color:#e5e5e5;} 100%{background-color:#efefef;}}*/
+	#wrapper{width:100%; height:100%; margin:0 auto;}
+	#main{width:100%;}
+	#header{width:100%; margin-top:13%; line-height:60px; font-size:30px; text-align:center;}
+	
+	#header .logo{text-align:center; margin-bottom:30px;}
+	
+	#main form{width:350px;}
+	#main legend{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0;}
+	#main fieldset{border:0 none;}
+	
+	#main form .login_id input[type="text"]{width:348px; height:43px; border:1px solid #d3d7da; margin-bottom:10px;}
+	#main form .login_id input[placeholder="로그인 버튼을 눌러주세요"]{font-size:12px; text-indent:17px; color:#808080;}
+	
+	#main form .login_pw input[type="password"]{width:348px; height:43px; border:1px solid #d3d7da; margin-bottom:10px;}
+	#main form .login_pw input[placeholder="로그인 버튼을 눌러주세요"]{font-size:12px; text-indent:17px; color:#808080;}
+	
+	#main form .check{font-size:80%; color:#adadad; line-height:20px;}
+	#main form .check input[type="checkbox"]{width:12px; height:12px;}
+	#main form .check label{margin-left:10px;}
+	
+	#main form #login_btn{margin-top:25px;}
+	#main form #login_btn input[type="button"]{width:350px; height:45px; color:#ffffff; border:0 none; background-color:#5e92d1; font-weight:bold; font-size:12px;}
+	
+	#footer{font-size:11px; display:none;} /*고쳐야함*/
+	#footer .copyright{text-align:center;}
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("#login_btn").click(function(){
+				/*if($("#userid").val()==""){$("#userid").focus(); return false;}
+				if($("#userpass").val()==""){$("#userpass").focus(); return false;}*/
+                location.href="./login_console.html";
+			});
+			
+			$("#login_btn input").mouseenter(function(){
+				$("#login_btn input").css({"backgroundColor":"#25426e", "cursor":"pointer"});
+			}).mouseleave(function(){
+				$("#login_btn input").css("backgroundColor","#5e92d1");
+			});
+		});
+    </script>
+</head>
+
+<body>
+	<div id="wrapper">
+        <button id="back" onclick="location.href='../portfolio_home.html'">포트폴리오로 돌아가기</button>
+		<!--header logo-->
+		<header id="header">
+			<!--<p class="logo"><img src="img/interaction/ipecs_logo.png" alt="ipecs"/></p>-->
+            <p>LOGIN</p>
+		</header> <!--header end-->
+		
+		<!--main login_form-->
+		<section id="main">
+			<h3 class="hidden">로그인창</h3>
+			<div class="container">
+				<form action="#" method="post" name="login">
+					<fieldset>
+						<legend>로그인</legend>
+						<p class="login_id">
+							<input type="text" id="userid" name="userid" placeholder="로그인 버튼을 눌러주세요" autocomplete="off"/> <!--required="required"-->
+						</p>
+						<p class="login_pw">
+							<input type="password" id="userpass" name="userpass" placeholder="로그인 버튼을 눌러주세요"/> <!--required="required"-->
+						</p>
+						<p class="check">
+							<input type="checkbox" id="remember_ck"/>
+							<label>Remember Me</label>
+						</p>
+						<p id="login_btn">
+							<input type="button" value="LOG IN"/>
+						</p>
+					</fieldset>
+				</form>
+			</div> <!--container end-->
+		</section> <!--login_ctn end-->
+		
+		<!--footer copyright-->
+		<footer id="footer">
+			<p class="copyright">Copyrightⓒ 2017 Nexus Community All Rights Reserved.</p>
+		</footer> <!--footer end-->
+	</div> <!--wrapper end-->
+</body>
+</html>

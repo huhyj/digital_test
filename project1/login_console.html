@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"> 
+<title>Login Console</title>
+
+<link rel="stylesheet" type="text/css" href="css/main_console.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/js_main_console.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+        <button id="back" onclick="location.href='../portfolio_home.html'">포트폴리오로 돌아가기</button>
+		<!--header-->
+		<header id="header">
+			<div class="container">
+				<div class="h_left">
+				<h1 class="hidden">header logo</h1>
+					<p class="h_logo">
+						<span><a href="login_console.html">LOGO</a></span>
+					</p>
+				</div> <!--h_left end-->
+			</div> <!--container end-->
+		</header> <!--header end-->
+		
+		<!--main login_form-->
+		<section id="main">	
+			<div class="logon_info">
+			<h3 class="hidden">로그온상태</h3>
+				<div class="container">
+					<div class="logon_state1">
+						<p class="log_name">YoonJung Huh</p>
+						<p class="log_no">[15222]</p>
+						<p class="log_time"></p>
+					</div> <!--logon_state1 end-->
+					<div class="logon_state2">
+						<div class="log_light"></div>
+						<select id="state_form" name="state_form">
+							<option value="logon">LOG ON</option>
+							<option value="logout">LOG OUT</option>
+						</select>
+					</div> <!--logon_state2 end-->
+				</div>
+			</div> <!--logon_info end-->
+			
+			<div class="logon_ctn">
+			<h3 class="hidden">Logon_console 내용</h3>
+				<div class="container">
+					<ul class="type_top">
+						<li>
+							<a href="interaction_home_new.html">
+								<span class="type_title">INTERACTION</span>
+								<img src="img/logon/interaction_btn.png" alt=""/>
+								<span>It is a counseling console that can cope effectively with multi-channel</span>
+							</a>
+						</li>
+						<li>
+							<a href="report_consul.html">
+								<span class="type_title">REPORT</span>
+								<img src="img/logon/report_btn.png" alt="report"/>
+								<span>It is a counseling console that can cope effectively with multi-channel</span>
+							</a>
+						</li>
+						<li>
+							<a href="monitoring_home.html">
+								<span class="type_title">MONITORING</span>
+								<img src="img/logon/monitoring_btn.png" alt="monitoring"/>
+								<span>It is a counseling console that can cope effectively with multi-channel</span>
+							</a>
+						</li>
+						<li>
+							<a href="management_distri.html">
+								<span class="type_title">MANAGEMENT</span>
+								<img src="img/logon/management_btn.png" alt="management"/>
+								<span>It is a counseling console that can cope effectively with multi-channel</span>
+							</a>
+						</li>
+					</ul> <!--type_top end-->
+					<ul class="type_bottom">	
+						<li>
+							<a href="kms_manag.html">
+								<span class="type_title">KMS/AGENT SCRIPT</span>
+								<img src="img/logon/kms_btn.png" alt="kms"/>
+								<span>It is a counseling console that can cope effectively with multi-channel</span>
+							</a>
+						</li>
+						<li>
+							<a href="setting_auth.html">
+								<span class="type_title">SETTING</span>
+								<img src="img/logon/setting_btn.png" alt="setting"/>
+								<span>It is a counseling console that can cope effectively with multi-channel</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="type_title">WALLBOARD</span>
+								<img src="img/logon/wallboard_btn.png" alt="wallboard"/>
+								<span>It is a counseling console that can cope effectively with multi-channel</span>
+							</a>
+						</li>
+					</ul> <!--type_bottom end-->
+				</div>
+			</div> <!--logon_ctn end-->
+		</section> <!--main end-->
+	</div> <!--wrapper end-->
+</body>
+</html>

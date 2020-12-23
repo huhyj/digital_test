@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"> 
+<title>Interaction History</title>
+	<link rel="stylesheet" type="text/css" href="css/main_history.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main_history.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+        <button id="back" onclick="location.href='../portfolio_home.html'">포트폴리오로 돌아가기</button>
+		<!--header-->
+		<header id="header">
+			<div class="container">
+				<div class="h_left">
+				<h1 class="hidden">header logo</h1>
+					<p class="h_logo">
+						<span><a href="login_console.html">LOGO</a></span>
+						<span><a href="interaction_home_new.html">Interaction</a></span>
+					</p>
+				</div> <!--h_left end-->
+			</div> <!--container end-->
+		</header> <!--header end-->
+		
+		<!--nav-->
+		<nav id="navbar">
+			<h2 class="hidden">메뉴</h2>
+			<ul>
+				<li class="home"><a href="interaction_home_new.html" title="HOME"><img src="img/interaction/menu_home_btn.png" alt="HOME"/></a></li>
+				<li class="call"><a href="interaction_call_new.html" title="CALL"><img src="img/interaction/menu_call_btn.png" alt="CALL"/></a></li>
+				<li class="mail"><a href="interaction_mail_new.html" title="MAIL"><img src="img/interaction/menu_mail_btn.png" alt="MAIL"/></a></li>
+				<li class="chat"><a href="interaction_chat_new.html" title="CHAT"><img src="img/interaction/menu_chat_btn.png" alt="CHAT"/></a></li>
+				<li class="history"><a href="interaction_history_new.html" title="HISTORY"><img src="img/interaction/menu_history_btn.png" alt="HISTORY"/></a></li>
+			</ul>
+		</nav> <!--navbar end-->
+		
+		<!--main-->
+		<div id="contents">
+			<section id="logon">
+				<div class="logon_info">
+				<h3 class="hidden">로그온상태</h3>
+					<div class="logon_state1">
+						<p class="log_no">[<span>15222</span>]</p>
+						<p class="log_time"></p>
+						<p class="log_name">Christina Smith</p>
+					</div> <!--logon_state1 end-->
+					<div class="logon_state2">
+						<div class="log_light"></div>
+						<select id="state_form" name="state_form">
+							<option value="logon">LOG ON</option>
+							<option value="logout">LOG OUT</option>
+							<option value="ready">READY</option>
+							<option value="not_ready">NOT READY</option>
+							<option value="after">AFTER CALL WORK</option>
+						</select>
+					</div> <!--logon_state2 end-->
+				</div> <!--logon_info end-->
+			</section>
+			<section id="main">		
+				<div class="history_ctn">
+				<h3 class="hidden">history_home 내용</h3>
+					<div class="h_tab">
+						<ul class="h_tab_left">
+							<li>ALL</li>
+							<li>CALL</li>
+							<li>MAIL</li>
+							<li>CHAT</li>
+						</ul> <!--h_tab_left end-->
+						<ul class="h_tab_right">
+							<span><img src="img/interaction/search_15_btn.png"/></span>
+							<li style="border:none"><a href="#">ALL</a></li>
+							<li><a href="#">6 Months</a></li>
+							<li><a href="#">3 Months</a></li>
+							<li><a href="#">This Month</a></li>
+							<li><a href="#">This Week</a></li>
+							<li><a href="#">Today</a></li>
+						</ul> <!--h_tab_right-->
+					</div> <!--h_tab end-->
+					<div class="container">
+						<div class="c_list">
+							<p>
+								<span>Customer</span>
+								<img src="img/interaction/up_down.png"/>
+								<!--
+								<input type="number" name="Customer" min="1" max="10">
+								-->
+							</p>
+							<ul class="c_list_info">
+								<li>
+									<span>Reginald</span>
+									<span>000-000-0000</span>
+									<img src="img/interaction/call_30_btn.png"/>
+								</li>
+								<li>
+									<span>Sydney</span>
+									<span>sydney@gmail.com</span>
+									<img src="img/interaction/mail_30_btn.png"/>
+								</li>
+								<li>
+									<span>Francisco</span>
+									<span>abcd123</span>
+									<img src="img/interaction/chat_30_btn.png"/>
+								</li>
+								<li>
+									<span>Reginald</span>
+									<span>000-000-0000</span>
+									<img src="img/interaction/call_30_btn.png"/>
+								</li>
+								<li>
+									<span>Sydney</span>
+									<span>sydney@gmail.com</span>
+									<img src="img/interaction/mail_30_btn.png"/>
+								</li>
+							</ul>
+						</div> <!--c_list end-->
+						<div class="c_type">
+							<ul class="c_type_rank">
+								<li>
+									<span>Hits</span>
+									<img src="img/interaction/up_down.png"/>
+								</li>
+								<li>
+									<span>Date</span>
+									<img src="img/interaction/up_down.png"/>
+								</li>
+								<li>
+									<span>Rate</span>
+									<img src="img/interaction/up_down.png"/>
+								</li>
+								<li>
+									<span>Type</span>
+									<img src="img/interaction/up_down.png"/>
+								</li>
+								<li>
+									<span>Type</span>
+									<img src="img/interaction/up_down.png"/>
+								</li>
+								<li>
+									<span>Type</span>
+									<img src="img/interaction/up_down.png"/>
+								</li>
+								<li>
+									<span class="hidden">Cnt</span>
+								</li>
+							</ul>
+							<ul class="c_type_info">
+								<li>55555</li>
+								<li>
+									<span>2018/01/12</span>
+									<span>00:00:00</span>
+								</li>
+								<li>
+									<!--
+									<img src="img/interaction/rate_off_9_btn.png"/>
+									<img src="img/interaction/rate_off_9_btn.png"/>
+									<img src="img/interaction/rate_off_9_btn.png"/>
+									<img src="img/interaction/rate_on_9_btn.png"/>
+									<img src="img/interaction/rate_on_9_btn.png"/>
+									-->
+									☆☆★★★
+								</li>
+								<li>Nexus Card</li>
+								<li>Nexus Card</li>
+								<li>Nexus Card</li>
+								<li>
+									<img src="img/interaction/audio_img.png"/>
+									<span class="c_view">VIEW</span>
+								</li>
+							</ul>
+							<ul class="c_type_info">
+								<li>55555</li>
+								<li>
+									<span>2018/01/12</span>
+									<span>00:00:00</span>
+								</li>
+								<li>☆☆★★★</li>
+								<li>Nexus Card</li>
+								<li>Nexus Card</li>
+								<li>Nexus Card</li>
+								<li>
+									<span>ABC Service Advisery</span>
+									<span>all scripts allow for busor biness ru neallow</span>
+								</li>
+							</ul>
+							<ul class="c_type_info">
+								<li>55555</li>
+								<li>
+									<span>2018/01/12</span>
+									<span>00:00:00</span>
+								</li>
+								<li>☆☆★★★</li>
+								<li>Nexus Card</li>
+								<li>Nexus Card</li>
+								<li>Nexus Card</li>
+								<li>
+									<span>Soon, when someone goes on a live stream, you'll see a dollar bill symbol in the chat window.</span>
+								</li>
+							</ul>
+							<ul class="c_type_info">
+								<li>55555</li>
+								<li>
+									<span>2018/01/12</span>
+									<span>00:00:00</span>
+								</li>
+								<li>☆☆★★★</li>
+								<li>Nexus Card</li>
+								<li>Nexus Card</li>
+								<li>Nexus Card</li>
+								<li>
+									<img src="img/interaction/audio_img.png"/>
+									<span class="c_view">VIEW</span>
+								</li>
+							</ul>
+							<ul class="c_type_info">
+								<li>55555</li>
+								<li>
+									<span>2018/01/12</span>
+									<span>00:00:00</span>
+								</li>
+								<li>☆☆★★★</li>
+								<li>Nexus Card</li>
+								<li>Nexus Card</li>
+								<li>Nexus Card</li>
+								<li>
+									<span>ABC Service Advisery</span>
+									<span>all scripts allow for busor biness ru neallow</span>
+								</li>
+							</ul>
+						</div> <!--c_type end-->
+					</div> <!--container end-->
+				</div> <!--chat_ctn end-->
+			</section> <!--main end-->
+			<div class="site_map_pop">
+				<ul>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/interaction_btn.png"/>
+							<span>INTERACTION</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/report_btn.png"/>
+							<span>REPORT</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/monitoring_btn.png"/>
+							<span>MONITORING</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/management_btn.png"/>
+							<span>MANAGEMENT</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/kms_btn.png"/>
+							<span>KMS</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/setting_btn.png"/>
+							<span>SETTING</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/wallboard_btn.png"/>
+							<span>WALLBOARD</span>
+						</a>
+					</li>
+				</ul>
+			</div> <!--site_map_pop end-->
+		</div> <!--contents end-->
+		
+		<!--footer copyright-->
+		<footer id="footer">
+		</footer> <!--footer end-->
+	</div> <!--wrapper end-->
+</body>
+</html>

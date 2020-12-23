@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
+		<title>ListManager</title>
+        <link rel="stylesheet" type="text/css" href="./css/ListManager.css"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="./js/ListManager.js"></script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header id="header">
+				<h1 class="hidden">Name</h1>
+                <div>
+                    <a class="logo" href="./login.html">PROJECT</a>
+                    <span class="LogID">admin20001</span>
+                    <button id="back" onclick="location.href='../portfolio_home.html'">포트폴리오로 돌아가기</button>
+                </div>
+			</header>
+			
+			<nav id="sidebar">
+                <h2 class="hidden">메뉴</h2>
+                <ul class="main_sidebar">
+                    <li class="customerList"><a href="./main_01.html">캠페인 리스트 현황</a></li>
+                    <li class="listGroupManager"><a href="./main_02.html">그룹 관리</a></li>
+                    <li class="groupListManager"><a href="./main_03.html">그룹 리스트 관리</a></li>
+                    <li class="deletedList"><a href="./main_04.html">삭제 리스트 관리</a></li>
+                    <li class="blackList"><a href="./main_05.html">블랙 리스트 관리</a></li>
+                    <li class="setting">
+                        <button id="setting_popup">설정</button>
+                        <img src="./img/setting_icon.png" style="width:18px; position:absolute; top:18px; left:15px">
+                    </li>
+                </ul>
+			</nav>
+            
+			<div id="contents">
+                <section id="main">		
+                    <div class="common_top">
+                        <h3 class="hidden">event button</h3>
+                        <span class="list_cnt list_cnt3"></span>
+                        <span class="list_cnt" style="font-size:12px; font-weight:bold; color:crimson;">(아래 캠페인 더블클릭시 상세보기 가능)</span>
+
+                        <div>
+                            <input type="text" value="검색" id="searchBoard" onfocus="this.value=''"><img src="./img/search_icon.png" />
+                        </div>
+                    </div>
+
+                    <div class="table_middle table_blackList">
+                        <h3 class="hidden">list table</h3>
+                        <table>
+                            <colgroup>
+                                <col style="width: 33%" />
+                                <col style="width: 34%" />
+                                <col style="width: 33%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>캠페인 ID</th>
+                                    <th>캠페인 이름</th>
+                                    <th>블랙리스트 개수</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr style="text-align:center">
+                                    <td>1003</td>
+                                    <td>블랙1003</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

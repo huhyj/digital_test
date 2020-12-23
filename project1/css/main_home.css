@@ -1,0 +1,86 @@
+	*{margin:0; padding:0;}
+	*:focus{outline:none;}
+	li{list-style-type:none;}
+	img{border:0 none;}
+	body{font-family:"Malgun Gothic", sans-serif; font-size:100%; background-color:#fff; overflow-Y:scroll;}
+	a:link, a:visited{color:#000; text-decoration:none;}
+	a:hover, a:focus{color:#000; text-decoration:none;}
+    
+	.hidden{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0;}
+	.container{margin:0 auto;}
+    #back{width:180px; height:30px; position:absolute; top:10px; right:10px; font-size:14px; cursor:pointer; border:none; z-index:200;}
+    #back:hover{font-weight:bold;}
+	
+/* layout */
+	#wrapper{width:100%; height:100%; overflow:hidden;}
+	#header{width:100%; height:55px; background-color:#fff; overflow:hidden; position:fixed; top:0; z-index:100;}
+	#navbar{width:60px; height:100%; background-color:#5e92d1; position:fixed; top:55px; left:0; z-index:100;}
+	#contents{height:100%; margin-left:60px; overflow:hidden;}
+	
+/* header */
+	#header .h_left{width:320px; height:55px; float:left;}
+	#header .h_left .h_logo span{float:left; line-height:55px; font-size:20px; font-weight:lighter; color:#494949;}
+	#header .h_left .h_logo span:nth-child(1){font-weight:bold; color:#000000; margin-right:10px; margin-left:30px;}
+	#header .h_right{float:right; cursor:pointer;}
+	#header .h_right .h_lnfo{width:439px; float:left;}
+	#header .h_right .h_lnfo li{color:#515151; font-size:11px; line-height:55px; float:left; margin-right:20px;}
+	#header .h_right .h_lnfo li .h_box{width:100%; padding:3px 5px; font-weight:500; background-color:#e9ecee;}
+	#header .h_right .h_icon{width:161px; float:left;}
+	#header .h_right .h_icon li{width:53px; height:20px; float:left; text-align:center; border-right:1px solid #d4d7d9; margin-top:20px;}
+	
+/* navbar */
+	#navbar li{width:60px; height:60px; float:left; text-align:center; background-color:#5e92d1;}
+	#navbar li img{padding:20px;}
+	
+/* contents */
+	/* logon */
+	#logon{width:100%; height:60px; background-color:#e3e7ea; position:fixed; top:55px; left:60px; z-index:100;}
+	#logon .logon_state1{width:130px; padding:10px 15px 10px 25px; color:#808080; float:left;}
+	#logon .logon_state1 .log_no{font-size:13px; float:left; line-height:20px; margin-right:6px;}
+	#logon .logon_state1 .log_time{font-size:13px; line-height:20px;}
+	#logon .logon_state1 .log_name{font-size:15px; line-height:18px; color:#494949; font-weight:600;}
+	
+	#logon .logon_state2{width:180px; float:left; color:#808080; position:relative;}
+	#logon .logon_state2 .log_light{width:7px; height:7px; border-radius:50%; background-color:#42cb70; position:absolute; top:26px; left:10px;}
+	#logon .logon_state2 select{width:158px; height:34px; border:0 none; padding-left:20px; margin-top:13px; color:#808080;}
+	
+/* main_home */
+	#main{width:100%; height:100%; margin-top:115px;}
+	#main .container{padding:20px;}
+	#main .main_mc p{color:#808080; font-size:15px; font-weight:600; margin-bottom:20px;}
+	#main .main_mc p img{width:15px; height:15px; margin-left:10px;}
+	
+	#main .mc_agent .analy{width:100%; font-size:12px; font-weight:500; float:left; margin-bottom:20px;}
+	#main .mc_agent .analy li{float:left; border:1px solid #e8e8e8; padding:10px 15px; margin-right:10px;}
+	
+	#main .mc_agent .agent_boxes{width:100%; float:left; color:#fff; margin-bottom:25px;}
+	#main .mc_agent .agent_boxes .agent_box{width:23.5%; height:170px; float:left; margin-right:2%;}
+	#main .mc_agent .agent_boxes .agent_box li{}
+	#main .mc_agent .agent_boxes .agent_box .a_b_title{height:37px; line-height:37px; text-align:center; font-size:13px; font-weight:600;}
+	#main .mc_agent .agent_boxes .agent_box .a_b_title .a_b_setting{float:left; margin-left:15px;}
+	#main .mc_agent .agent_boxes .agent_box .a_b_title .a_b_close{float:right; margin-right:15px;}
+	#main .mc_agent .agent_boxes .agent_box .a_b_num{text-align:center; font-size:65px; line-height:93px; font-weight:lighter;}
+	#main .mc_agent .agent_boxes .agent_box .a_b_num img{padding-bottom:27px; padding-right:15px;}
+	#main .mc_agent .agent_boxes .agent_box .a_b_avg{width:49.5%; line-height:16px; float:left; text-align:center; font-size:12px; border-right:1px solid #1173a1; font-weight:400; margin-top:11px;}
+	#main .mc_agent .agent_boxes .agent_box .a_b_avg span{font-size:17px; font-weight:600;}
+	#main .mc_agent .agent_boxes .agent_box .a_b_top{width:49.5%; line-height:38px; float:right; text-align:center; font-size:12px; font-weight:400;}
+	#main .mc_agent .agent_boxes .agent_box .a_b_top span{font-size:17px; font-weight:600;}
+	
+	#main .mc_agent .agent_boxes .agent_box.a_b1{background-color:#5474bf;}
+	#main .mc_agent .agent_boxes .agent_box.a_b1 .a_b_title{background-color:#2b4278;}
+	#main .mc_agent .agent_boxes .agent_box.a_b2{background-color:#5688dd;}
+	#main .mc_agent .agent_boxes .agent_box.a_b2 .a_b_title{background-color:#345998;}
+	#main .mc_agent .agent_boxes .agent_box.a_b3{background-color:#1badf1;}
+	#main .mc_agent .agent_boxes .agent_box.a_b3 .a_b_title{background-color:#1173a1;}
+	#main .mc_agent .agent_boxes .agent_box.a_b4{background-color:#0cb9d4;}
+	#main .mc_agent .agent_boxes .agent_box.a_b4 .a_b_title{background-color:#0d8598;}
+	
+	/* site_map */
+	#contents .site_map_pop{width:240px; height:280px; margin-top:55px; padding:30px; background-color:#ffffff; border:1px solid #adadad; box-shadow:0 2px 10px rgba(0,0,0,0.2); position:absolute; top:0; right:0; z-index:5000;}
+	#contents .site_map_pop li{width:80px; height:100px; float:left; text-align:center; cursor:pointer;}
+	#contents .site_map_pop li img{display:block; margin-left:15px; margin-bottom:5px;}
+	#contents .site_map_pop li span{font-size:12px; color:#666; font-weight:normal;}
+	
+	.customer-photo{display:inline-block; width:32px; height:32px; border-radius:50%; background-size:32px 35px; background-position:center center; vertical-align:middle; line-height:32px; box-shadow:inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2); margin-left:5px;}
+    .customer-name{display:inline-block; vertical-align:middle; line-height:32px; padding-left:3px;}
+	

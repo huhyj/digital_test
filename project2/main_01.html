@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
+		<title>ListManager</title>
+        <link rel="stylesheet" type="text/css" href="./css/ListManager.css"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="./js/ListManager.js"></script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header id="header">
+				<h1 class="hidden">Name</h1>
+                <div>
+                    <a class="logo" href="./login.html">PROJECT</a>
+                    <span class="LogID">admin20001</span>
+                    <button id="back" onclick="location.href='../portfolio_home.html'">포트폴리오로 돌아가기</button>
+                    <!--<input id='logoutBtn' class="logoutBtn" type="button" value="로그아웃">-->
+                </div>
+			</header>
+			
+			<nav id="sidebar">
+                <h2 class="hidden">메뉴</h2>
+                <ul class="main_sidebar">
+                    <li class="customerList"><a href="./main_01.html">캠페인 리스트 현황</a></li>
+                    <li class="listGroupManager"><a href="./main_02.html">그룹 관리</a></li>
+                    <li class="groupListManager"><a href="./main_03.html">그룹 리스트 관리</a></li>
+                    <li class="deletedList"><a href="./main_04.html">삭제 리스트 관리</a></li>
+                    <li class="blackList"><a href="./main_05.html">블랙 리스트 관리</a></li>
+                    <li class="setting">
+                        <button id="setting_popup">설정</button>
+                        <img src="./img/setting_icon.png" style="width:18px; position:absolute; top:18px; left:15px">
+                    </li>
+                </ul>
+			</nav>
+			
+			<div id="contents">
+                <section id="main">
+                    <div class="common_top">
+                        <h3 class="hidden">event button</h3>
+                        <div>
+                            <input type="text" value="검색" id="searchBoard" onfocus="this.value=''"><img src="./img/search_icon.png" />
+                        </div>
+                        <div class="campaignIdBox" id="campaignIdBox">
+                            <form id="ListForm" name="ListForm">
+                                <select id="campaignId" name="campaignId" onchange="campaignIdCheck()">
+                                    <option value="" selected disabled> 캠페인ID를 선택해주세요. </option>
+                                    <option value="" >전체 리스트 보기</option>
+                                    <option value="1000" >ID : 1000</option>
+                                    <option value="1001" >ID : 1001</option>
+                                    <option value="1002" >ID : 1002</option>
+                                </select>
+                            </form>	
+                        </div>
+
+                        <button type="button" class="delete afterBoxDelete" onclick="checked_list()">삭제</button>
+                        <span class="list_cnt list_cnt1"></span>
+                    </div>
+
+                    <div class="table_middle table_customerList">
+                        <h3 class="hidden">list table</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width:35px; min-width:35px;"><input type="checkbox" id="check_all" onclick="check_all()"></th>
+                                    <th>캠페인ID</th>
+                                    <th>그룹 이름</th>
+                                    <th>고객키</th>
+                                    <th>고객 이름</th>
+                                    <th>고객 전화번호</th>
+                                    <th>발신여부</th>
+                                    <th>블랙리스트 여부</th>
+                                    <th>생성자</th>
+                                    <th>생성 날짜 및 시간</th>
+                                    <th>수정자</th>
+                                    <th>수정 날짜 및 시간</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr style="text-align:center">
+                                    <td style="width:35px; min-width:35px;"><input type="checkbox" id="check" name="check_cnt"></td>
+                                    <td>1000</td>
+                                    <td>캠페인1000</td>
+                                    <td>2020120110001</td>
+                                    <td>Customer001</td>
+                                    <td>010-1111-1111</td>
+                                    <td>N</td>
+                                    <td>N</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                </tr>
+                                <tr style="text-align:center">
+                                    <td style="width:35px; min-width:35px;"><input type="checkbox" id="check" name="check_cnt"></td>
+                                    <td>1000</td>
+                                    <td>캠페인1000</td>
+                                    <td>2020120110002</td>
+                                    <td>Customer002</td>
+                                    <td>010-2222-2222</td>
+                                    <td>N</td>
+                                    <td>N</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                </tr>
+                                <tr style="text-align:center">
+                                    <td style="width:35px; min-width:35px;"><input type="checkbox" id="check" name="check_cnt"></td>
+                                    <td>1000</td>
+                                    <td>캠페인1000</td>
+                                    <td>2020120110003</td>
+                                    <td>Customer003</td>
+                                    <td>010-3333-3333</td>
+                                    <td>N</td>
+                                    <td>N</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                </tr>
+                                <tr style="text-align:center">
+                                    <td style="width:35px; min-width:35px;"><input type="checkbox" id="check" name="check_cnt"></td>
+                                    <td>1000</td>
+                                    <td>캠페인1000</td>
+                                    <td>2020120110004</td>
+                                    <td>Customer004</td>
+                                    <td>010-4444-4444</td>
+                                    <td>N</td>
+                                    <td>N</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                </tr>
+                                <tr style="text-align:center">
+                                    <td style="width:35px; min-width:35px;"><input type="checkbox" id="check" name="check_cnt"></td>
+                                    <td>1001</td>
+                                    <td>캠페인1001</td>
+                                    <td>2020120110005</td>
+                                    <td>Customer005</td>
+                                    <td>010-5555-5555</td>
+                                    <td>N</td>
+                                    <td>N</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                </tr>
+                                <tr style="text-align:center">
+                                    <td style="width:35px; min-width:35px;"><input type="checkbox" id="check" name="check_cnt"></td>
+                                    <td>1002</td>
+                                    <td>캠페인1002</td>
+                                    <td>2020120110006</td>
+                                    <td>Customer006</td>
+                                    <td>010-6666-6666</td>
+                                    <td>N</td>
+                                    <td>N</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                </tr>
+                                <tr style="text-align:center">
+                                    <td style="width:35px; min-width:35px;"><input type="checkbox" id="check" name="check_cnt"></td>
+                                    <td>1002</td>
+                                    <td>캠페인1002</td>
+                                    <td>2020120110007</td>
+                                    <td>Customer007</td>
+                                    <td>010-7777-7777</td>
+                                    <td>N</td>
+                                    <td>N</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                </tr>
+                                <tr style="text-align:center">
+                                    <td style="width:35px; min-width:35px;"><input type="checkbox" id="check" name="check_cnt"></td>
+                                    <td>1003</td>
+                                    <td>블랙1003</td>
+                                    <td>2020120110008</td>
+                                    <td>Customer008</td>
+                                    <td>010-8888-8888</td>
+                                    <td>N</td>
+                                    <td>Y</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                </tr>
+                                <tr style="text-align:center">
+                                    <td style="width:35px; min-width:35px;"><input type="checkbox" id="check" name="check_cnt"></td>
+                                    <td>1003</td>
+                                    <td>블랙1003</td>
+                                    <td>2020120110009</td>
+                                    <td>Customer009</td>
+                                    <td>010-9999-9999</td>
+                                    <td>N</td>
+                                    <td>Y</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                    <td>admin20001</td>
+                                    <td>2020/12/01</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

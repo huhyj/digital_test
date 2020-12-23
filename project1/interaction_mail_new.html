@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"> 
+<title>Interaction Mail</title>
+	<link rel="stylesheet" type="text/css" href="css/main_mail.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main_mail.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+        <button id="back" onclick="location.href='../portfolio_home.html'">포트폴리오로 돌아가기</button>
+		<!--header-->
+		<header id="header">
+			<div class="container">
+				<div class="h_left">
+				<h1 class="hidden">header logo</h1>
+					<p class="h_logo">
+						<span><a href="login_console.html">LOGO</a></span>
+						<span><a href="interaction_home_new.html">Interaction</a></span>
+					</p>
+				</div> <!--h_left end-->
+			</div> <!--container end-->
+		</header> <!--header end-->
+		
+		<!--nav-->
+		<nav id="navbar">
+			<h2 class="hidden">메뉴</h2>
+			<ul>
+				<li class="home"><a href="interaction_home_new.html" title="HOME"><img src="img/interaction/menu_home_btn.png" alt="HOME"/></a></li>
+				<li class="call"><a href="interaction_call_new.html" title="CALL"><img src="img/interaction/menu_call_btn.png" alt="CALL"/></a></li>
+				<li class="mail"><a href="interaction_mail_new.html" title="MAIL"><img src="img/interaction/menu_mail_btn.png" alt="MAIL"/></a></li>
+				<li class="chat"><a href="interaction_chat_new.html" title="CHAT"><img src="img/interaction/menu_chat_btn.png" alt="CHAT"/></a></li>
+				<li class="history"><a href="interaction_history_new.html" title="HISTORY"><img src="img/interaction/menu_history_btn.png" alt="HISTORY"/></a></li>
+			</ul>
+		</nav> <!--navbar end-->
+		
+		<!--main-->
+		<div id="contents">
+			<section id="logon">
+				<div class="logon_info">
+				<h3 class="hidden">로그온상태</h3>
+					<div class="logon_state1">
+						<p class="log_no">[<span>15222</span>]</p>
+						<p class="log_time"></p>
+						<p class="log_name">Christina Smith</p>
+					</div> <!--logon_state1 end-->
+					<div class="logon_state2">
+						<div class="log_light"></div>
+						<select id="state_form" name="state_form">
+							<option value="logon">LOG ON</option>
+							<option value="logout">LOG OUT</option>
+							<option value="ready">READY</option>
+							<option value="not_ready">NOT READY</option>
+							<option value="after">AFTER CALL WORK</option>
+						</select>
+					</div> <!--logon_state2 end-->
+				</div> <!--logon_info end-->
+			</section>
+			<section id="main">		
+				<div class="mail_ctn">
+				<h3 class="hidden">home 내용</h3>
+					<div class="mail_mc mc_list">
+						<div class="container">
+						<h4>MAIL LISTS</h4>
+							<div class="list_search">
+								<input name="listSearch" id ="listSearch" class="listSearch" placeholder="SEARCH">
+								<img src="img/interaction/search_15_btn.png"/>
+							</div><!--list_search end-->
+							<div class="list_col">
+								<ul>
+									<li>
+										<img src="img/interaction/ca.png">
+										<span class="mail_list_name">Christina Aguilera</span>
+										<span class="mail_list_new">N</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:57</span>
+									</li>
+									<li>
+										<img src="img/interaction/ca2.png">
+										<span class="mail_list_name">Sam Smith</span>
+										<span class="mail_list_new">N</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:40</span>
+									</li>
+									<li>
+										<img src="img/interaction/ca3.png">
+										<span class="mail_list_name">Fred Mercury</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:31</span>
+									</li>
+									<li>
+										<img src="img/interaction/ca4.png">
+										<span class="mail_list_name">Ryon Fiit</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:25</span>
+									</li>
+									<li>
+										<img src="img/interaction/ca.png">
+										<span class="mail_list_name">Christina Aguilera</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:57</span>
+									</li>
+									<li>
+										<img src="img/interaction/ca2.png">
+										<span class="mail_list_name">Sam Smith</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:40</span>
+									</li>
+									<li>
+										<img src="img/interaction/ca3.png">
+										<span class="mail_list_name">Fred Mercury</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:31</span>
+									</li>
+									<li>
+										<img src="img/interaction/ca4.png">
+										<span class="mail_list_name">Ryon Fiit</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:25</span>
+									</li>
+									<li>
+										<img src="img/interaction/ca.png">
+										<span class="mail_list_name">Christina Aguilera</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:57</span>
+									</li>
+									<li>
+										<img src="img/interaction/ca2.png">
+										<span class="mail_list_name">Sam Smith</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:40</span>
+									</li>
+									<li>
+										<img src="img/interaction/ca3.png">
+										<span class="mail_list_name">Fred Mercury</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:31</span>
+									</li>
+									<li>
+										<img src="img/interaction/ca4.png">
+										<span class="mail_list_name">Ryon Fiit</span>
+										<span class="mail_list_cnt">Welcome to the nexus</span>
+										<span class="mail_list_time">15:25</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div> <!--mc_list end-->
+					<div class="mail_mc mc_edit_mail">
+						<div class="container">
+							<div class="customer_info_box">
+							<h4>CONTACT INFORMATION</h4>
+								<ul>
+									<li class="c_name"><img src="img/interaction/ca5.png"/>Reginald Stewart</li>
+									<li class="c_trans">TRANSFER</li>
+									<li class="c_help">HELP</li>
+								</ul>
+							</div>
+						</div> <!--container end-->
+						<div class="container">
+							<div class="customer_mail_box">
+								<p>ABC Service Advisory</p>
+								<span>Fri, 1/8/2018, 9:30AM</span>
+								<span>+9</span>
+								<span>Attach Files</span>
+								<div class="customer_mail_cnt">
+									<p>Dear Jason Grigsby,</p><br/>
+									<p>When you moved your MobileMe account to iCloud, we provided you with a complimentary storage upgrade beyond the standard 5GB that comes with an iCloud account to help you with the transition. Originally, this storge upgrade was set to expire on September 30, 2018.</p><br/>
+									<p>As a thank you to our former MobileMe members, we will continue to provide you with this complimentary storage upgrade at no charge, for an additional year.</p><br/>
+									<p>Thank you again for using iCloud</p><br/>
+									<p>iCloud Team</p>
+								</div>
+								<div class="customer_mail_edit">
+									<ul class="mail_subject">
+										<li>
+											<label for="subject">Subject</label>
+											<input type="text" name="service" id="service"/>
+										</li>
+									</ul> <!--mail_subject end-->
+									<ul class="mail_type">
+										<li class="edit_title">Type</li>
+										<ul class="types">
+											<li>
+												<select id="type1" name="type1">
+													<option value="consul">CONSULTATION TYPE</option>
+													<option value="consul">TYPE A</option>
+													<option value="consul">TYPE B</option>
+													<option value="consul">TYPE C</option>
+												</select>
+											</li>
+											<li>
+												<select id="type2" name="type2">
+													<option value="consul">CONSULTATION TYPE</option>
+													<option value="consul">TYPE A</option>
+													<option value="consul">TYPE B</option>
+													<option value="consul">TYPE C</option>
+												</select>
+											</li>
+											<li>
+												<select id="type3" name="type3">
+													<option value="consul">CONSULTATION TYPE</option>
+													<option value="consul">TYPE A</option>
+													<option value="consul">TYPE B</option>
+													<option value="consul">TYPE C</option>
+												</select>
+											</li>
+										</ul>
+									</ul> <!--mail_type end-->
+									<ul class="mail_attach_frequently">
+										<li>File Attach</li>
+										<li class="attach">ATTACHING</li>
+										<ul>
+											<li>Frequently Used Contents</li>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li><img src="img/interaction/report_icon_set_30.png"></li>
+										</ul>
+									</ul> <!--mail_attach_frequently end-->
+								</div> <!--customer_mail_edit end-->
+								<div class="kendo_edit">kendo edit place</div> <!--kendo ui edit-->
+							</div> <!--customer_mail_box end-->
+						</div> <!--container end-->
+						<div class="submit_btn">
+							<button type="button" class="btn_preview">PREVIEW</button>
+							<input type="submit" class="sub_ready" value="SUBMIT / READY"/>
+							<input type="submit" class="sub_rest" value="SUBMIT / REST"/>
+						</div>
+					</div> <!--mc_list end-->
+					<div class="mail_mc mc_contact">
+						<div class="container">
+						<h4>CUSTOMER CONTACT EXPERIENCE</h4>
+							<span><img src="img/interaction/menu_kms_btn.png" alt="kms"/></span>							
+							<div class="contact_graph"><img src="img/interaction/chart.png"></div>
+							<div class="contact_tab">
+								<ul class="tab_title">
+									<li><a href="#tab1">ALL<span>(00)</span></a></li>
+									<li><a href="#tab2">CALL<span>(00)</span></a></li>
+									<li><a href="#tab3">MAIL<span>(00)</span></a></li>
+									<li><a href="#tab4">CHAT<span>(00)</span></a></li>
+								</ul>
+								<ul class="tab_type">
+									<li>
+										<select id="tab_type1" name="tab_type1">
+											<option value="data">Data</option>
+											<option value="data">Data</option>
+										</select>
+									</li>
+									<li>
+										<select id="tab_type2" name="tab_type2">
+											<option value="type">TypeA</option>
+											<option value="type">TypeA</option>
+										</select>
+									</li>
+									<li>
+										<select id="tab_type3" name="tab_type3">
+											<option value="type">TypeB</option>
+											<option value="type">TypeB</option>
+										</select>
+									</li>
+								</ul>
+								<ul class="tab_cnt">
+									<li>
+										<div class="panel" id="tab1">
+											<ul>
+												<li>2017.12.01</li>
+												<li>Nexus card</li>
+												<li>Family card</li>
+											</ul>
+											<ul>
+												<li>2017.12.02</li>
+												<li>Nexus card2</li>
+												<li>Family card2</li>
+											</ul>
+										</div>
+									</li><!--ALL-->
+									<li>
+										<div class="panel" id="tab2">
+											<ul>
+												<li>2017.12.10</li>
+												<li>Nexus card</li>
+												<li>Family card</li>
+											</ul>
+										</div>
+									</li><!--CALL-->
+									<li>
+										<div class="panel" id="tab3">
+											<ul>
+												<li>2017.12.20</li>
+												<li>Nexus card</li>
+												<li>Family card</li>
+											</ul>
+											<ul>
+												<li>2017.12.21</li>
+												<li>Nexus card</li>
+												<li>Family card</li>
+											</ul>
+											<ul>
+												<li>2017.12.22</li>
+												<li>Nexus card</li>
+												<li>Family card</li>
+											</ul>
+										</div>
+									</li><!--MAIL-->
+									<li>
+										<div class="panel" id="tab4">
+											<ul>
+												<li>2017.12.30</li>
+												<li>Nexus card</li>
+												<li>Family card</li>
+											</ul>
+											<ul>
+												<li>2017.12.31</li>
+												<li>Nexus card</li>
+												<li>Family card</li>
+											</ul>
+										</div>
+									</li><!--CHAT-->
+								</ul>
+							</div>
+						</div> <!--container end-->
+						<div class="kms_pop">
+							<div class="kms_chart">
+								<ul class="kms_col">
+									<li>CONTENTS</li>
+									<li>RATE</li>
+									<li>HIT</li>
+								</ul>
+								<ul class="kms_cnt">
+									<li>communication 100 live</li>
+									<li>
+										<img src="img/interaction/rate_off_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+									</li>
+									<li>100</li>
+								</ul>
+								<ul class="kms_cnt">
+									<li>communication 200 live</li>
+									<li>
+										<img src="img/interaction/rate_off_9_btn.png"/>
+										<img src="img/interaction/rate_off_9_btn.png"/>
+										<img src="img/interaction/rate_off_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+									</li>
+									<li>200</li>
+								</ul>
+								<ul class="kms_cnt">
+									<li>communication 300 live</li>
+									<li>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+									</li>
+									<li>300</li>
+								</ul>
+								<ul class="kms_cnt">
+									<li>communication 400 live</li>
+									<li>
+										<img src="img/interaction/rate_off_9_btn.png"/>
+										<img src="img/interaction/rate_off_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+										<img src="img/interaction/rate_on_9_btn.png"/>
+									</li>
+									<li>400</li>
+								</ul>
+								<ul class="kms_cnt">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<ul class="kms_cnt">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<ul class="kms_cnt">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<ul class="kms_cnt">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<ul class="kms_cnt">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<ul class="kms_cnt">
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div> <!--kms_chart end-->
+							<div class="kms_search">
+								<input name="kmsSearch" id ="kmsSearch" class="kmsSearch" placeholder="SEARCH">
+								<img src="img/interaction/search_18_btn.png"/>
+							</div><!--kms_search end-->
+							<div class="kms_page_num">
+								<ul>
+									<span><</span>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+									<span>></span>
+								</ul>
+							</div> <!--kms_page_num end-->
+							<div class="kms_detail">
+								<h5>What is communication live?</h5>
+								<span>detail</span>
+							</div>
+						</div> <!--kms_pop end-->
+					</div> <!--mc_contact end-->
+				</div> <!--mail_ctn end-->
+			</section> <!--main end-->
+			<div class="site_map_pop">
+				<ul>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/interaction_btn.png"/>
+							<span>INTERACTION</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/report_btn.png"/>
+							<span>REPORT</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/monitoring_btn.png"/>
+							<span>MONITORING</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/management_btn.png"/>
+							<span>MANAGEMENT</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/kms_btn.png"/>
+							<span>KMS</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/setting_btn.png"/>
+							<span>SETTING</span>
+						</a>
+					</li>
+					<li>
+						<a href="interaction_home_new.html">
+							<img src="img/logon/wallboard_btn.png"/>
+							<span>WALLBOARD</span>
+						</a>
+					</li>
+				</ul>
+			</div> <!--site_map_pop end-->
+		</div> <!--contents end-->
+		
+		<!--footer copyright-->
+		<footer id="footer">
+		</footer> <!--footer end-->
+	</div> <!--wrapper end-->
+</body>
+</html>

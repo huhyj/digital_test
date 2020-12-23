@@ -1,0 +1,4 @@
+/* base.css */
+		body{background-color:#fff; font-family:"³ª´®°íµñ", Arial, Malgun Gothic, sans-serif;}
+	    a:link, a:visited{color:#000; text-decoration:none;}
+	    a:hover, a:focus{color:#000; text-decoration:none;}

@@ -1,0 +1,46 @@
+    *{margin:0; padding:0;}
+    li{list-style-type:none;}
+    img{border:0 none;}
+    body{font-family:"Malgun Gothic", sans-serif; color:#000; font-size:100%; background-color:#e3e7ea; }
+    a:link, a:visited{color:#000; text-decoration:none;}
+    a:hover, a:focus{color:#000; text-decoration:none;}
+
+    .hidden{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; font-size:0; line-height:0;}
+    .container{margin:0 auto;}
+    #back{width:180px; height:30px; position:absolute; top:10px; right:10px; font-size:14px; cursor:pointer; border:none; z-index:200;}
+    #back:hover{font-weight:bold;}
+	
+/* wrapper layout */
+	#wrapper{width:100%; height:100%; overflow:hidden;}
+
+/* header layout */
+	#header{width:100%; height:55px; background-color:#fff; overflow:hidden;}
+	#header .container{width:100%; height:55px; line-height:55px;}
+/* header left */
+	#header .container .h_left{float:left;}
+	#header .container .h_left .h_logo{font-size:20px; font-weight:bold; color:#000000; margin-left:30px;}
+
+/* main layout */
+	#main{width:100%; height:100%; overflow:hidden; background-color:#e3e7ea;}
+
+/* main logon_info */
+	#main .logon_info{width:100%; height:60px; padding-left:40px; background-color:#e3e7ea; overflow:hidden;}
+	#main .logon_info .container{width:100%;}
+	#main .logon_info .logon_state1{width:140px; height:49px; font-size:80%; padding-top:10px; color:#808080; float:left;}
+	#main .logon_info .logon_state1 .log_no{float:left; margin-right:3%;}
+	#main .logon_info .logon_state1 .log_name{color:#494949; font-size:115%; font-weight:bold;}
+	
+	#main .logon_info .logon_state2{width:180px; height:60px; float:left; position:relative;}
+	#main .logon_info .logon_state2 select{width:155px; height:35px; font-size:75%; padding:2% 2% 2% 12%; margin-top:13px; color:#808080; border:0 none;}
+	#main .logon_info .logon_state2 .log_light{width:7px; height:7px; border-radius:50%; background-color:#42cb70; position:absolute; top:27px; left:12px;}
+
+/* main logon_ctn */
+	#main .logon_ctn{width:100%; height:100%; margin-top:5px;}
+	#main .logon_ctn .container{padding-left:40px;}
+	
+	#main .logon_ctn .type_top, #main .logon_ctn .type_bottom{width:84%; text-align:center; margin-left:13%;}
+	#main .logon_ctn li a{width:20%; height:250px; float:left; padding-top:45px; background-color:#fff; margin-right:2%; margin-bottom:25px; display:block; opacity:0.5;}
+    #main .logon_ctn ul.type_top li:first-child a{opacity:1.0;}
+	#main .logon_ctn li span{width:78%; margin-left:11%; display:block; color:#9a9a9a; font-size:13px; font-weight:400; line-height:19px;}
+	#main .logon_ctn li img{margin-bottom:35px;}
+	#main .logon_ctn li .type_title{margin-bottom:38px; font-size:15px; font-weight:600;}

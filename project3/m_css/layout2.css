@@ -1,0 +1,12 @@
+/* layout.css */
+		#wrapper{width:100%; height:100%; margin:0 auto;}
+	    #header{width:100%; height:135px; background-color:#fff;}
+	    #visual{width:100%; height:555px;}
+		.m_content.mc1{width:100%; height:420px;}
+		.m_content.mc2{width:100%; height:430px;}
+		.m_content.mc3{width:100%; height:760px;}
+		.m_content.mc4{width:100%; height:450px;}
+		.mobile_mc{width:100%; height:100%;}
+		.banner.b1{width:100%; height:130px; background:url("../images/event_banner2.jpg") no-repeat center;}
+		.banner.b2{width:100%; height:320px; background:url("../images/banner/banner2_mod.png") no-repeat 0;}
+        .container{width:980px; margin:0 auto;}
