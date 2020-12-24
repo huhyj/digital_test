@@ -150,7 +150,7 @@
 	#main .call_ctn .mc_contact .contact_tab .tab_title li a.selected{border:1px solid #808080; font-weight:600; font-size:13px;}
 	#main .call_ctn .mc_contact .contact_tab .tab_title li a span{font-weight:bold;}
 	#main .call_ctn .mc_contact .contact_tab .tab_cnt .panel{width:90%; color:#808080; font-weight:400; font-size:12px; padding:0 5% 5% 5%;}
-#main .call_ctn .mc_contact .contact_tab .tab_cnt .panel:hover{font-weight:bold;}
+    #main .call_ctn .mc_contact .contact_tab .tab_cnt .panel:hover{font-weight:bold;}
 	#main .call_ctn .mc_contact .contact_tab .tab_cnt .panel li{width:33%; float:left; height:50px; line-height:50px;}
 	
 	#main .call_ctn .mc_contact .kms_pop .kms_chart{width:90%; height:235px; margin-left:5%; color:#494949;}
