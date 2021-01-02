@@ -136,7 +136,7 @@
         .mc2 .land .last_border a:link, .mc2 .land .last_border a:visited, .mc3 .land .last_border a:link, .mc3 .land .last_border a:visited{border:0 none;}
             
 /* banner1 */
-		.banner.b1{background-color:#1C4535;}
+		.banner.b1{background-color:#FE4332;}
 		.banner.b1 .container{position:relative;}
 		.content{width:270px; position:absolute; top:40px; left:280px;}
         .content .banner_title{font-size:16px; color:#F4BF7D; margin-bottom:5px;}

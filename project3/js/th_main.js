@@ -162,7 +162,7 @@
 				
 //banner1
 				//countdown
-				var countDown = new Date("Dec 31, 2020 23:59:59").getTime();
+				var countDown = new Date("Jan 31, 2021 23:59:59").getTime();
 				var x = setInterval(function(){
 					var now = new Date().getTime();
 					var distance = countDown - now;
