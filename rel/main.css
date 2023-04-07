@@ -33,7 +33,10 @@
         #main .mc_space{width:100%; max-width: 1024px; margin:0 auto; position:relative; background-color:#FFF;}
         #main .mc_space .container{width:90%; padding:5%;}
         #main .mc_space p.mc_title{height:40px; line-height:30px; margin-bottom:20px; font-size:30px; color:#A82C37; font-weight:bold; border-bottom:2px solid #A82C37;}
-	#main .mc_space p.mc_title2{font-size: 22px; margin-bottom: 5px;}
+	#main .mc_space p.mc_title2{font-size: 24px; margin-bottom: 5px;}
+	#main .mc_space p.mc_title2 span{font-size: 13px;}
+	#main .mc_space .inner{margin-bottom: 30px;}
+	#main .mc_space .inner p{font-size: 16px;}
         #main .mc_space .transparent{color:transparent;}
         #main .mc_space p,
 	#main .mc_space span{clear:both; line-height:30px; font-size:18px; color:#000;}
