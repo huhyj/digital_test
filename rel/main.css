@@ -21,8 +21,8 @@
         #content img{width:100px; height:100px; margin-top:150px; border-radius:50%;}
         #content p{margin-top:30px; font-size:50px;}
         #content p.txt{margin-top:15px; font-size:26px; font-weight:100;}
-        #gnb_box{width:980px; height:60px; margin:0 auto; position:relative; clear:both;}
-        #gnb_box .gnb{width:980px; height:60px; border-top-left-radius:10px; border-top-right-radius:10px; background-color:#EAEAEA; position:absolute; top:0; left:calc(50% - 490px); z-index:200;}
+        #gnb_box{width:100%; max-width: 1024px; height:60px; margin:0 auto; position:relative; clear:both;}
+        #gnb_box .gnb{width:100%; height:60px; border-top-left-radius:10px; border-top-right-radius:10px; background-color:#EAEAEA; position:absolute; top:0; left:calc(50% - 640px); z-index:200;}
 /*         #gnb_box .gnb li{width:25%; height:100%; float:left; text-align:center;} */
 	#gnb_box .gnb li{width:33.3%; height:100%; float:left; text-align:center;}
         #gnb_box .gnb li a{color:#000; display:block; border-right:1px solid #000; margin-top:20px; font-size:20px;}
@@ -30,7 +30,7 @@
         #gnb_box .gnb li a:hover{text-shadow:2px 2px 3px #CCC;}
 
 /* main */
-        #main .mc_space{width:980px; height:390px; margin:0 auto; position:relative; background-color:#FFF;}
+        #main .mc_space{width:100%; max-width: 1024px; margin:0 auto; position:relative; background-color:#FFF;}
         #main .mc_space .container{width:90%; padding:5%;}
         #main .mc_space p.mc_title{height:40px; line-height:30px; margin-bottom:20px; float:left; font-size:30px; color:#A82C37; font-weight:bold; border-bottom:2px solid #A82C37;}
         #main .mc_space .transparent{color:transparent;}
@@ -38,7 +38,6 @@
         #main .mc_space .explain{width:100%; height:100%; float:left; clear:both; line-height:35px; margin-bottom:10px; font-size:18px; color:#000;}
         #main .mc_space .explain li:first-child{width:130px; height:100%; float:left;}
         #main .mc_space .explain li:last-child{width:calc(100% - 130px); height:100%; float:right;}
-        #main .mc_1{height:520px;}
         #main .mc_4{border-bottom-left-radius:10px; border-bottom-right-radius:10px; margin-bottom:100px;}
         /* button */
         #main .mc_space .linkBtn{width:120px; height:50px; background-color:#EAEAEA; border:none; border-radius:25px; font-size:18px; position:absolute; top:170px; right:6%; transition:all ease 1s;}
