@@ -65,6 +65,7 @@
 
 /* TABLET min:768px~max:1023px */
         @media all and (min-width:768px) and (max-width:1023px){
+	    #header{padding-top: 0px;}
             #content{height:450px;}
             #content p{font-size:40px;}
             #content p.txt{margin-top:20px; font-size:22px;}
