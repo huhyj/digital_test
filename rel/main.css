@@ -34,7 +34,7 @@
         #main .mc_space{width:100%; max-width: 1024px; margin:0 auto; position:relative; background-color:#FFF;}
         #main .mc_space .container{padding:50px;}
         #main .mc_space p.mc_title{height:40px; line-height:30px; margin-bottom:20px; font-size:30px; color:#A82C37; font-weight:bold; border-bottom:2px solid #A82C37;}
-	#main .mc_space p.mc_title2{font-size: 24px; margin-bottom: 5px;}
+	#main .mc_space p.mc_title2{font-size: 24px !important; margin-bottom: 5px;}
 	#main .mc_space p.mc_title2 span{font-size: 13px;}
 	#main .mc_space .inner{margin-bottom: 30px;}
 	#main .mc_space .inner p, #main .mc_space .inner_box p{font-size: 16px;}
