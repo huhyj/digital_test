@@ -48,6 +48,7 @@
 	.inner_box{display:flex;}
 	.inner_box_lt{width:20%;}
 	.inner_box_rt{flex-grow:1;}
+	.inner_box_rt > div{margin-bottom:30px;}
 
         /* button */
         #main .mc_space .linkBtn{width:120px; height:50px; background-color:#EAEAEA; border:none; border-radius:25px; font-size:18px; position:absolute; top:170px; right:6%; transition:all ease 1s;}
