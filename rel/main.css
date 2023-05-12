@@ -10,7 +10,7 @@
         /*.no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}*/
 
 /* layout */
-        #wrapper{width:100%; height:100%; margin:0 auto; padding:70px 0px; float:left; background-image: url('../images/background3.png'); background-attachment:fixed;}/*background-image:linear-gradient(0deg, #EFD5D4, #365789);*/
+        #wrapper{width:100%; height:100%; margin:0 auto; padding:70px 0px; float:left; background-color:#73b6e4; background-attachment:fixed;}/*background-image:linear-gradient(0deg, #EFD5D4, #365789); background-image: url('../images/background3.png');*/
         #header{width:100%; height:100%; margin:0 auto; float:left;}
         #main{width:100%; height:100%; float:left; margin:0 auto;}
         #footer{width:100%; height:400px; margin:0 auto; clear:both;}
