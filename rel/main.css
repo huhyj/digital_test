@@ -37,7 +37,7 @@
 	#main .mc_space p.mc_title2{font-size: 24px; margin-bottom: 5px;}
 	#main .mc_space p.mc_title2 span{font-size: 13px;}
 	#main .mc_space .inner{margin-bottom: 30px;}
-	#main .mc_space .inner p{font-size: 16px;}
+	#main .mc_space .inner p, #main .mc_space .inner_box p{font-size: 16px;}
         #main .mc_space .transparent{color:transparent;}
         #main .mc_space p,
 	#main .mc_space span{clear:both; line-height:30px; font-size:18px; color:#000;}
@@ -45,6 +45,7 @@
         #main .mc_space .explain li:first-child{width:130px; height:100%; float:left;}
         #main .mc_space .explain li:last-child{width:calc(100% - 130px); height:100%; float:right;}
         #main .mc_4{border-bottom-left-radius:10px; border-bottom-right-radius:10px; margin-bottom:100px;}
+	.pic{width:115px;}
 	.inner_box{display:flex;}
 	.inner_box_lt{width:20%;}
 	.inner_box_rt{flex-grow:1;}
@@ -85,6 +86,7 @@
 /*             #main .mc_space{width:100%; height:430px;}
             #main .mc_space .mc_1{height:520px;} */
             #gnb_box{width:100%;}
+	   .pic{width:100%;}
             #gnb_box .gnb{width:100%; left:0; border-radius:0px;}
             #footer{height:350px;}
             #footer .f_content{width:100%;}
@@ -104,9 +106,10 @@
             #main .mc_space .explain li:first-child{width:100%;}
             #main .mc_space .explain li:last-child{width:100%;}
             #main .mc_space.mc_4{margin-bottom:60px;}
-            
+            .pic{width:100%;}
             #main .mc_space .linkBtn{width:30%; background-color:#EAEAEA; border:none; border-radius:5px; font-size:18px; position:inherit; margin-top:20px; margin-left:35%; transition:all ease 1s;}
             #main .mc_space .linkBtn:hover{width:100%; margin-left:0; box-shadow:none; cursor:pointer;}
+	    #gnb_box .gnb{width:100%; left:0; border-radius:0px;}
             #footer{height:320px;}
             #footer .f_content{width:100%;}
             #footer .f_content p{font-size:18px;}
