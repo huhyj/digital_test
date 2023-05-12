@@ -92,6 +92,7 @@
 
 /* MOBILE ~767px */
         @media all and (max-width:767px){
+	    #wrapper{padding:0px; background-image:none;}
             #content{height:300px;}
             #content p{margin-top:20px; font-size:30px;}
             #content p.txt{margin-top:15px; font-size:18px;}
