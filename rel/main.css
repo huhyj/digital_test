@@ -85,7 +85,7 @@
 /*             #main .mc_space{width:100%; height:430px;}
             #main .mc_space .mc_1{height:520px;} */
             #gnb_box{width:100%;}
-            #gnb_box .gnb{width:100%; left:0;}
+            #gnb_box .gnb{width:100%; left:0; border-radius:0px;}
             #footer{height:350px;}
             #footer .f_content{width:100%;}
         }
@@ -96,9 +96,9 @@
             #content p{margin-top:20px; font-size:30px;}
             #content p.txt{margin-top:15px; font-size:18px;}
             #content img{width:80px; height:80px; margin-top:50px;}
-            #gnb_box{display:none;}
+/*             #gnb_box{display:none;} */
             
-            #main .mc_space{width:100%; height:500px;}
+/*             #main .mc_space{width:100%; height:500px;} */
             #main .mc_space .container{width:90%;}
             #main .mc_space p.mc_title{font-size: 26px;}
             #main .mc_space .explain li:first-child{width:100%;}
