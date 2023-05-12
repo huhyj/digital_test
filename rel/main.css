@@ -22,7 +22,7 @@
         #content p{margin-top:30px; font-size:50px;}
         #content p.txt{margin-top:15px; font-size:26px; font-weight:100;}
         #gnb_box{width:100%; max-width: 1024px; height:60px; margin:0 auto; position:relative; clear:both;}
-        #gnb_box .gnb{width:100%; height:60px; border-top-left-radius:10px; border-top-right-radius:10px; background-color:#EAEAEA; position:absolute; top:0; left:calc(50% - 512px); z-index:200;}
+        #gnb_box .gnb{width:100%; max-width: 1024px; height:60px; border-top-left-radius:10px; border-top-right-radius:10px; background-color:#EAEAEA; position:absolute; top:0; left:calc(50% - 512px); z-index:200;}
 /*         #gnb_box .gnb li{width:25%; height:100%; float:left; text-align:center;} */
 	#gnb_box .gnb li{width:33.3%; height:100%; float:left; text-align:center;}
         #gnb_box .gnb li a{color:#000; display:block; border-right:1px solid #000; margin-top:20px; font-size:20px;}
@@ -76,13 +76,14 @@
 
 /* TABLET min:768px~max:1023px */
         @media all and (min-width:768px) and (max-width:1023px){
+	    #wrapper{padding:0px; background-image:none;}
 	    #header{padding-top: 0px;}
             #content{height:450px;}
             #content p{font-size:40px;}
             #content p.txt{margin-top:20px; font-size:22px;}
             #content img{margin-top:100px;}
-            #main .mc_space{width:100%; height:430px;}
-            #main .mc_space .mc_1{height:520px;}
+/*             #main .mc_space{width:100%; height:430px;}
+            #main .mc_space .mc_1{height:520px;} */
             #gnb_box{width:100%;}
             #gnb_box .gnb{width:100%; left:0;}
             #footer{height:350px;}
