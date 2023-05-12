@@ -130,6 +130,7 @@
             #main .mc_space .container{width:90%;}
 	    #main .mc_space span{clear:both; line-height:30px; font-size:14px; color:#000;}
             #main .mc_space p.mc_title{font-size: 26px;}
+	    #main .mc_space p.mc_title2{font-size:18px !important;}
             #main .mc_space .explain li:first-child{width:100%;}
             #main .mc_space .explain li:last-child{width:100%;}
             #main .mc_space.mc_4{margin-bottom:60px;}
