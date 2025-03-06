@@ -79,8 +79,7 @@
 	.inner_box_lt{width:20%;}
 	.inner_box_rt{flex-grow:1;}
 	.inner_box_rt > div{margin-bottom:30px;}
-	.more_y{float:left;}
-	.more_y > div{display:flex; justify-content:space-between;}
+	.more_y{display:flex; justify-content:space-between; align-items:center;}
 
         /* button */
         #main .mc_space .linkBtn{width:120px; height:40px; background-color:#EAEAEA; border:none; border-radius:25px; font-size:18px; margin-top:10px; transition:all ease 1s;}
