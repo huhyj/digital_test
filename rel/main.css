@@ -61,7 +61,7 @@
 /* main */
 	.bold{font-weight: bold;}
         #main .mc_space{width:100%; max-width: 1024px; margin:0 auto; position:relative; background-color:#FFF;}
-        #main .mc_space .container{padding:35px;}
+        #main .mc_space .container{padding:30px;}
         #main .mc_space p.mc_title{height:40px; line-height:30px; margin-bottom:20px; font-size:30px; color:#A82C37; font-weight:bold; border-bottom:2px solid #A82C37;}
 	#main .mc_space p.mc_title2{font-size: 24px !important; margin-bottom: 5px;}
 	#main .mc_space p.mc_title2 span{font-size: 13px;}
