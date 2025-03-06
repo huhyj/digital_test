@@ -82,7 +82,7 @@
 	.more_y{display:flex; justify-content:space-between; align-items:center;}
 
         /* button */
-        #main .mc_space .linkBtn{width:120px; height:40px; background-color:#EAEAEA; border:none; border-radius:25px; font-size:18px; transition:all ease 1s;}
+        #main .mc_space .linkBtn{width:120px; height:40px; color:#A82C37; background-color:#EAEAEA; border:none; border-radius:25px; font-size:18px; transition:all ease 1s;}
         #main .mc_space .linkBtn:hover{cursor:pointer; box-shadow:2px 2px 2px;}
 
 /* footer */
@@ -137,7 +137,7 @@
             #main .mc_space.mc_4{margin-bottom:60px;}
             .pic{width:100%; max-width:115px;}
             #main .mc_space .linkBtn{background-color:#EAEAEA; border:none; border-radius:5px; font-size:18px; margin-top:12px; margin-left:calc(50% - 60px); transition:all ease 1s;}
-            #main .mc_space .linkBtn:hover{width:100%; margin-left:0; box-shadow:none; cursor:pointer;}
+            #main .mc_space .linkBtn:hover{box-shadow:none;}
 	    #gnb_box .gnb{width:100%; left:0; border-radius:0px;}
 	   .inner_box{display:block;}
 	   .inner_box_lt{width:100%;}
