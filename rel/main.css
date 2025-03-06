@@ -86,7 +86,7 @@
         #main .mc_space .linkBtn:hover{cursor:pointer; box-shadow:2px 2px 2px;}
 
 /* footer */
-        #footer .f_content{width:100%; max-width:1024px; height:100%; margin:0 auto; color:#000; background-color:#fff; text-align:center;}
+        #footer .f_content{width:100%; max-width:1024px; height:100%; margin:0 auto; color:#000; text-align:center;}
         #footer .f_content p{font-size:20px; line-height:50px; opacity:0.7;}
         #footer .f_content span.item{font-weight:bold; margin-right:15px; opacity:1.0;}
         #footer .f_content p.copyright{font-size:12px; margin-top:30px;}
