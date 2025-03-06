@@ -120,7 +120,7 @@
         }
 
 /* MOBILE ~767px */
-        @media all and (max-width:767px){
+/*         @media all and (max-width:767px){
 	    #wrapper{padding:0px; background-image:none;}
             #content{height:300px;}
             #content p{margin-top:20px; font-size:30px;}
@@ -144,4 +144,4 @@
             #footer{height:320px;}
             #footer .f_content{width:100%;}
             #footer .f_content p{font-size:18px;}
-        }
+        } */
