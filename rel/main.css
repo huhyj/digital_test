@@ -136,7 +136,7 @@
             #main .mc_space .explain li:last-child{width:100%;}
             #main .mc_space.mc_4{margin-bottom:60px;}
             .pic{width:100%; max-width:115px;}
-            #main .mc_space .linkBtn{width:30%; background-color:#EAEAEA; border:none; border-radius:5px; font-size:18px; position:inherit; margin-top:20px; margin-left:35%; transition:all ease 1s;}
+            #main .mc_space .linkBtn{width:30%; background-color:#EAEAEA; border:none; border-radius:5px; font-size:18px; margin-left:35%; transition:all ease 1s;}
             #main .mc_space .linkBtn:hover{width:100%; margin-left:0; box-shadow:none; cursor:pointer;}
 	    #gnb_box .gnb{width:100%; left:0; border-radius:0px;}
 	   .inner_box{display:block;}
