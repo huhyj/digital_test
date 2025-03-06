@@ -141,6 +141,7 @@
 	    #gnb_box .gnb{width:100%; left:0; border-radius:0px;}
 	   .inner_box{display:block;}
 	   .inner_box_lt{width:100%;}
+	   .more_y{display:block;}
 		
             #footer{height:320px;}
             #footer .f_content{width:100%;}
