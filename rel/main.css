@@ -81,7 +81,7 @@
 	.inner_box_rt > div{margin-bottom:30px;}
 
         /* button */
-        #main .mc_space .linkBtn{width:120px; height:50px; background-color:#EAEAEA; border:none; border-radius:25px; font-size:18px; transition:all ease 1s;}
+        #main .mc_space .linkBtn{width:120px; height:40px; background-color:#EAEAEA; border:none; border-radius:25px; font-size:18px; transition:all ease 1s;}
         #main .mc_space .linkBtn:hover{cursor:pointer; box-shadow:2px 2px 2px;}
 
 /* footer */
