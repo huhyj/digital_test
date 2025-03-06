@@ -82,7 +82,7 @@
 	.more_y{float:left;}
 
         /* button */
-        #main .mc_space .linkBtn{width:120px; height:40px; background-color:#EAEAEA; border:none; border-radius:25px; font-size:18px; transition:all ease 1s;}
+        #main .mc_space .linkBtn{width:120px; height:40px; background-color:#EAEAEA; border:none; border-radius:25px; font-size:18px; margin-top:10px; transition:all ease 1s;}
         #main .mc_space .linkBtn:hover{cursor:pointer; box-shadow:2px 2px 2px;}
 
 /* footer */
