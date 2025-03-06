@@ -54,7 +54,7 @@
         #gnb_box .gnb{width:100%; max-width: 1024px; height:60px; border-top-left-radius:10px; border-top-right-radius:10px; background-color:#EAEAEA; position:absolute; top:0; left:calc(50% - 512px); z-index:200;}
 /*         #gnb_box .gnb li{width:25%; height:100%; float:left; text-align:center;} */
 	#gnb_box .gnb li{width:33.3%; height:100%; float:left; text-align:center;}
-        #gnb_box .gnb li a{color:#000; display:block; border-right:1px solid #000; margin-top:20px; font-size:20px;}
+        #gnb_box .gnb li a{color:#000; display:block; border-right:1px solid #000; margin-top:20px; font-size:18px;}
         #gnb_box .gnb li a.scroll_third{border-right:none;}
         #gnb_box .gnb li a:hover{text-shadow:2px 2px 3px #CCC;}
 
