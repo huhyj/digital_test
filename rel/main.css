@@ -67,7 +67,6 @@
 	#main .mc_space p.mc_title2 span{font-size: 13px;}
 	#main .mc_space .inner{margin-bottom: 30px;}
 	#main .mc_space .inner p, #main .mc_space .inner_box p{font-size: 16px; word-break:keep-all;}
-	#main .mc_space .inner_box p span{font-size: 16px; background-color: #eee;}
         #main .mc_space .transparent{color:transparent;}
         #main .mc_space p,
 	#main .mc_space span{clear:both; line-height:30px; font-size:18px; color:#000;}
@@ -117,6 +116,8 @@
             #gnb_box{width:100%;}
 	    .pic{width:100%;}
 	    #main .mc_space .container{padding:30px;}
+	    #main .mc_space .inner_box p.bold{font-size: 18px;}
+	    #main .mc_space .inner_box p span{font-size: 16px; background-color: #eee;}
             #gnb_box .gnb{width:100%; left:0; border-radius:0px;}
             #footer{height:120px; background-color:#fff; border-top: 1px solid #eee;}
             #footer .f_content{width:100%;}
@@ -138,6 +139,8 @@
 	    #main .mc_space p.mc_title2{font-size:18px !important;}
             #main .mc_space .explain li:first-child{width:100%;}
             #main .mc_space .explain li:last-child{width:100%;}
+	    #main .mc_space .inner_box p.bold{font-size: 18px;}
+	    #main .mc_space .inner_box p span{font-size: 16px; background-color: #eee;}
             #main .mc_space.mc_4{margin-bottom:60px;}
             .pic{width:100%; max-width:115px;}
             #main .mc_space .linkBtn{background-color:#EAEAEA; border:none; border-radius:5px; font-size:18px; margin-top:12px; margin-left:calc(50% - 60px); transition:all ease 1s;}
