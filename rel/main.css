@@ -117,8 +117,9 @@
 	    .pic{width:100%;}
 	    #main .mc_space .container{padding:30px;}
             #gnb_box .gnb{width:100%; left:0; border-radius:0px;}
-            #footer{height:350px;}
+            #footer{height:120px; background-color:#fff; border-top: 1px solid #eee;}
             #footer .f_content{width:100%;}
+	    #footer .f_content p.copyright{margin-top:0px;}
         }
 
 /* MOBILE ~767px */
@@ -148,4 +149,5 @@
             #footer{height:80px; background-color:#fff; border-top: 1px solid #eee;}
             #footer .f_content{width:100%;}
             #footer .f_content p{font-size:18px;}
+	    #footer .f_content p.copyright{margin-top:0px;}
         }
