@@ -67,6 +67,7 @@
 	#main .mc_space p.mc_title2 span{font-size: 13px;}
 	#main .mc_space .inner{margin-bottom: 30px;}
 	#main .mc_space .inner p, #main .mc_space .inner_box p{font-size: 16px; word-break:keep-all;}
+	#main .mc_space .inner_box p span{font-size: 16px; background-color: #eee;}
         #main .mc_space .transparent{color:transparent;}
         #main .mc_space p,
 	#main .mc_space span{clear:both; line-height:30px; font-size:18px; color:#000;}
