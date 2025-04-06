@@ -145,7 +145,7 @@
 	   .inner_box_lt{width:100%;}
 	   .more_y{display:block;}
 		
-            #footer{height:320px;}
+            #footer{height:80px; background-color:#fff; border-top: 1px solid #eee;}
             #footer .f_content{width:100%;}
             #footer .f_content p{font-size:18px;}
         }
